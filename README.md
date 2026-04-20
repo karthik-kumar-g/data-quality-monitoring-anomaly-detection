@@ -1,6 +1,6 @@
 # Data Quality Monitoring and Anomaly Detection in Large-Scale Data Pipelines
 
-Lightweight Semester 1 prototype for monitoring data quality issues in recurring data pipelines using fully local, open-source tooling.
+Lightweight prototype for monitoring data quality issues in recurring data pipelines using fully local, open-source tooling.
 
 ## Overview
 
@@ -8,8 +8,6 @@ This project simulates a recurring batch and streaming-style data pipeline, inje
 
 The repository is intentionally kept small and deployment-focused:
 - no cloud dependency
-- no academic submission files
-- no generated outputs committed to Git
 - runnable on a laptop or lab machine
 
 ## What The Project Detects
@@ -179,9 +177,9 @@ make clean
 make demo
 ```
 
-## Semester 1 Scope
+##Scope
 
-This repository covers the implementation baseline for Semester 1:
+This repository covers the implementation baseline:
 - local synthetic pipeline simulation
 - anomaly injection and labeling
 - batch and streaming-style monitoring
