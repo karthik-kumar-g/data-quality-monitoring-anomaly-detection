@@ -1,0 +1,13 @@
+services:
+  dq-monitor:
+    build:
+      context: .
+      dockerfile: deployment/Dockerfile
+    container_name: dq-monitor-sem1
+    ports:
+      - "${DQM_DASHBOARD_PORT:-8000}:8000"
+    volumes:
+      - ./data:/app/data
+      - ./results:/app/results
+      - ./dashboard:/app/dashboard
+    restart: unless-stopped
